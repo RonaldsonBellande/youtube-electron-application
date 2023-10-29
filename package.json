@@ -1,0 +1,38 @@
+{
+  "name": "youtube-electron",
+  "appId": "com.github.ronaldsonbellande.${name}",
+  "productName": "Youtube",
+  "version": "2.0.0",
+  "description": "A Linux desktop web app for Youtube",
+  "main": "scripts/main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --publish never"
+  },
+  "build": {
+    "asar": false,
+    "linux": {
+      "target": [
+        "zip",
+        "AppImage"
+      ],
+      "category": "Entertainment",
+      "artifactName": "${name}_${version}_linux.${ext}"
+    },
+    "extraFiles": [
+      "com.github.ronaldsonbellande.${name}.desktop"
+    ]
+  },
+  "repository": "https://github.com/ronaldsonbellande/youtube-electron",
+  "keywords": [
+    "Electron",
+    "youtube",
+    "Youtube"
+  ],
+  "author": "Ronaldson Bellande <ronaldsonbellande@gmail.com>",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "electron": "^27.0.0",
+    "electron-builder": "^24.6.4"
+  }
+}

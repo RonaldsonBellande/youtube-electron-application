@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=YouTube
+Comment=entertainment services with youtube
+Comment[ro]=entertainment services with youtube
+Type=Application
+Exec=/opt/youtube-electron/youtube-electron
+Icon=youtube
+StartupWMClass=youtube
+Categories=Network;Entertainment
+Keywords=Entertainment;Streaming;YouTube;youtube;YT
+Keywords[ro]=Entertainment;Streaming
